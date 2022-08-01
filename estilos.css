@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&family=Anek+Tamil:wght@100&family=Antonio:wght@100&family=Big+Shoulders+Display:wght@100&family=Dosis:wght@200&family=Expletus+Sans&family=Judson&family=Montaga&family=Mukta+Mahee:wght@200&family=Mukta:wght@200&family=Saira+Extra+Condensed:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&display=swap");
+/*font-family: 'Anek Bangla', sans-serif;
+font-family: 'Anek Tamil', sans-serif;
+font-family: 'Antonio', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Expletus Sans', cursive;
+font-family: 'Judson', serif;
+font-family: 'Montaga', serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Saira Extra Condensed', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.918);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: auto;
+  z-index: 2;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav {
+  padding: 20px 0px;
+}
+nav ul li {
+  color: white;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 18px;
+}
+nav .menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: rgba(255, 255, 0, 0.884);
+}
+
+.submenu {
+  position: absolute;
+  width: 250%;
+  background-color: rgba(0, 0, 0, 0.918);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+  list-style: none;
+}
+
+.submenu li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+h1 {
+  color: rgb(231, 231, 8);
+  background-image: url(../imagenes/vintage\ 11.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 900px;
+  width: 100%;
+}
+
+.subrayado {
+  text-decoration: line-through;
+  font-size: 200px;
+  text-align: center;
+}
+
+.titulo-foto {
+  text-align: center;
+  margin: 5%;
+  color: whitesmoke;
+  font-size: 19px;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(22, 150, 236, 0.452);
+  padding: 2%;
+  display: flex;
+  width: auto;
+  height: 100%;
+}
+.container .polaroid {
+  position: relative;
+  width: 16%;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 3%;
+  color: black;
+}
+.container .polaroid figcaption {
+  left: 0px;
+  bottom: 0px;
+  color: black;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+.container .polaroid .pfigcaption {
+  color: black;
+  margin-top: 5%;
+  font-family: sans-serif;
+}
+
+.container2 {
+  text-align: center;
+  background-color: rgba(255, 206, 142, 0.904);
+  padding: 2%;
+  display: flex;
+  width: auto;
+  height: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.container2 .polaroid {
+  position: relative;
+  width: 16%;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 3%;
+  color: black;
+}
+.container2 .polaroid figcaption {
+  left: 0px;
+  bottom: 0px;
+  color: black;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+.container2 .polaroid .pfigcaption {
+  color: black;
+  margin-top: 5%;
+  font-family: sans-serif;
+}
+
+h2 {
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.drop-anterior {
+  display: flex;
+  background-color: rgba(0, 255, 221, 0.616);
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  position: relative;
+  margin-top: 3%;
+}
+.drop-anterior .imagen-drop {
+  width: 65%;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.drop-anterior .titulo-imagen1 {
+  color: whitesmoke;
+  font-family: "Saira Extra Condensed", sans-serif;
+  width: 34%;
+}
+
+.drop-anterior1 {
+  display: flex;
+  background-color: rgba(215, 243, 149, 0.815);
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  position: relative;
+  margin-top: 0%;
+}
+.drop-anterior1 .imagen-drop2 {
+  width: 65%;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin-left: auto;
+}
+.drop-anterior1 .titulo-imageen1 {
+  color: whitesmoke;
+  font-family: "Saira Extra Condensed", sans-serif;
+  width: 34%;
+}
+
+.imagen-drop > img, .imagen-drop2 > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.drop-anterior4 {
+  display: flex;
+  background-color: rgba(236, 126, 126, 0.815);
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+  position: relative;
+  margin-top: 0%;
+}
+.drop-anterior4 .titulo-imagen2 {
+  color: whitesmoke;
+  font-family: "Saira Extra Condensed", sans-serif;
+  width: 34%;
+  text-align: left;
+}
+.drop-anterior4 .titulo-imagen2 .cristal {
+  text-align: left;
+  width: 5%;
+  margin: 5%;
+  margin-top: 40%;
+}
+.drop-anterior4 .titulo-imagen3 {
+  color: whitesmoke;
+  font-family: "Saira Extra Condensed", sans-serif;
+  width: 34%;
+}
+
+.textoo {
+  font-size: 30px;
+  margin: 5%;
+  margin-top: 0%;
+}
+
+h4 {
+  color: white;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 50px;
+  margin-top: 40%;
+}
+
+.contenedor {
+  height: 35vh;
+}
+
+footer {
+  background-color: #141414;
+  color: white;
+  width: 80%;
+  margin: auto;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+footer .main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 3rem;
+}
+footer .main .brand {
+  width: 75%;
+}
+footer .main li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+footer .main input[type=text] {
+  padding: 8px 10px;
+  background-color: #141414;
+  color: white;
+  border: 1px solid #ccc;
+  outline: none;
+}
+footer .main .btn {
+  padding: 9px 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  outline: none;
+}
+footer .main .accounts {
+  margin-top: 30px;
+}
+footer .main .accounts i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+footer .copyright {
+  color: rgb(255, 139, 226);
+  padding: 1.2rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+p {
+  opacity: 0.6;
+}
+
+hr {
+  opacity: 0.6;
+}/*# sourceMappingURL=estilos.css.map */

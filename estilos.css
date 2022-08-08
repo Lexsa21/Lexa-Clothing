@@ -8,6 +8,8 @@ font-family: 'Judson', serif;
 font-family: 'Montaga', serif;
 font-family: 'Mukta', sans-serif;
 font-family: 'Saira Extra Condensed', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&family=Anek+Tamil:wght@100&family=Antonio:wght@100&family=Big+Shoulders+Display:wght@100&family=Dosis:wght@200&family=Expletus+Sans&family=Judson&family=Montaga&family=Mukta+Mahee:wght@200&family=Mukta:wght@200&family=Saira+Extra+Condensed:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&family=Anek+Tamil:wght@100&family=Antonio:wght@100&family=Big+Shoulders+Display:wght@100&family=Dosis:wght@200&family=Expletus+Sans&family=Judson&family=Montaga&family=Mukta+Mahee:wght@200&family=Mukta:wght@200&family=Saira+Extra+Condensed:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -95,19 +97,16 @@ nav a:hover {
   opacity: 1;
 }
 
-h1 {
-  color: rgb(231, 231, 8);
-  background-image: url(../imagenes/vintage\ 11.png);
-  background-size: cover;
-  background-attachment: fixed;
-  height: 900px;
-  width: 100%;
-}
-
 .subrayado {
   text-decoration: line-through;
   font-size: 200px;
   text-align: center;
+  color: rgb(231, 231, 8);
+  background-image: url(../imagenes/imgInicio1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 900px;
+  width: 100%;
 }
 
 .titulo-foto {
@@ -118,7 +117,7 @@ h1 {
   font-family: "Saira Extra Condensed", sans-serif;
 }
 
-.container {
+.container, .container2 {
   text-align: center;
   background-color: rgba(22, 150, 236, 0.452);
   padding: 2%;
@@ -126,7 +125,7 @@ h1 {
   width: auto;
   height: 100%;
 }
-.container .polaroid {
+.container .polaroid, .container2 .polaroid {
   position: relative;
   width: 16%;
   margin: auto;
@@ -134,13 +133,13 @@ h1 {
   padding: 3%;
   color: black;
 }
-.container .polaroid figcaption {
+.container .polaroid figcaption, .container2 .polaroid figcaption {
   left: 0px;
   bottom: 0px;
   color: black;
   font-family: "Saira Extra Condensed", sans-serif;
 }
-.container .polaroid .pfigcaption {
+.container .polaroid .pfigcaption, .container2 .polaroid .pfigcaption {
   color: black;
   margin-top: 5%;
   font-family: sans-serif;
@@ -155,25 +154,6 @@ h1 {
   height: 100%;
   margin-top: 10%;
   margin-bottom: 10%;
-}
-.container2 .polaroid {
-  position: relative;
-  width: 16%;
-  margin: auto;
-  background-color: aliceblue;
-  padding: 3%;
-  color: black;
-}
-.container2 .polaroid figcaption {
-  left: 0px;
-  bottom: 0px;
-  color: black;
-  font-family: "Saira Extra Condensed", sans-serif;
-}
-.container2 .polaroid .pfigcaption {
-  color: black;
-  margin-top: 5%;
-  font-family: sans-serif;
 }
 
 h2 {
@@ -337,4 +317,450 @@ p {
 
 hr {
   opacity: 0.6;
+}
+
+/*font-family: 'Saira Extra Condensed', sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.918);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: auto;
+  z-index: 2;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav {
+  padding: 20px 0px;
+}
+nav ul li {
+  color: white;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 18px;
+}
+nav .menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: rgba(255, 255, 0, 0.884);
+}
+
+.submenu {
+  position: absolute;
+  width: 250%;
+  background-color: rgba(0, 0, 0, 0.918);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+  list-style: none;
+}
+
+.submenu li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subrayado2 {
+  font-size: 200px;
+  text-align: center;
+  color: rgba(215, 243, 149, 0.815);
+  background-image: url(../imagenes/imgHombre1.png);
+  background-size: center;
+  background-attachment: fixed;
+  height: 900px;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 200px;
+}
+
+.titulo-foto {
+  text-align: center;
+  margin: 5%;
+  color: whitesmoke;
+  font-size: 19px;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.container5 {
+  text-align: center;
+  background-color: rgb(255, 160, 242);
+  padding: 2%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.container5 .polaroid {
+  position: relative;
+  width: 22%;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 3%;
+  color: black;
+}
+.container5 figcaption {
+  left: 0px;
+  bottom: 0px;
+  color: black;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+.container5 .pfigcaption {
+  color: black;
+  margin-top: 5%;
+  font-family: sans-serif;
+  margin-bottom: 0% !important;
+}
+
+hr {
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.pie-pagina {
+  margin-top: 15%;
+}
+.pie-pagina h3 {
+  color: white;
+  font-family: "Saira Extra Condensed", sans-serif;
+  display: grid;
+  justify-content: center;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  padding: 20px 0px;
+  justify-content: center;
+}
+.pie-pagina .grupo-1 .redFooter {
+  color: whitesmoke;
+  font-family: "Saira Extra Condensed", sans-serif;
+  letter-spacing: 1px;
+}
+.pie-pagina .grupo-2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  padding: 20px 0px;
+  justify-content: center;
+}
+.pie-pagina .grupo-2 small {
+  color: rgb(253, 162, 230);
+  font-family: sans-serif;
+}
+
+@media (max-width: 710px) {
+  body {
+    font-size: 15px;
+    width: 100vh !important;
+  }
+}
+/* escritorio normales */
+@media (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+  .card {
+    margin-top: 4%;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  strong {
+    display: none;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .polaroid {
+    width: 66% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 4% !important;
+  }
+}
+/*font-family: 'Saira Extra Condensed', sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.918);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: auto;
+  z-index: 2;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav {
+  padding: 20px 0px;
+}
+nav ul li {
+  color: white;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 18px;
+}
+nav .menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: rgba(255, 255, 0, 0.884);
+}
+
+.submenu {
+  position: absolute;
+  width: 250%;
+  background-color: rgba(0, 0, 0, 0.918);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+  list-style: none;
+}
+
+.submenu li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subrayado3 {
+  font-size: 200px;
+  text-align: center;
+  color: rgba(255, 189, 102, 0.719);
+  background-image: url(../imagenes/imgMujer1.png);
+  background-size: center;
+  background-attachment: fixed;
+  height: 800px;
+  width: 100%;
+}
+
+.titulo-foto {
+  text-align: center;
+  margin: 5%;
+  color: whitesmoke;
+  font-size: 19px;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.container6 {
+  text-align: center;
+  background-color: rgba(255, 206, 142, 0.904);
+  padding: 2%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.container6 .polaroid {
+  position: relative;
+  width: 22%;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 3%;
+  color: black;
+}
+.container6 figcaption {
+  left: 0px;
+  bottom: 0px;
+  color: black;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+.container6 .pfigcaption {
+  color: black;
+  margin-top: 5%;
+  font-family: sans-serif;
+  margin-bottom: 0% !important;
+}
+
+.container7 {
+  text-align: center;
+  background-color: rgba(255, 206, 142, 0.904);
+  padding: 2%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.container7 .polaroid {
+  position: relative;
+  width: 22%;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 3%;
+  color: black;
+}
+.container7 figcaption {
+  left: 0px;
+  bottom: 0px;
+  color: black;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+.container7 .pfigcaption {
+  color: black;
+  margin-top: 5%;
+  font-family: sans-serif;
+  margin-bottom: 0% !important;
+}
+
+hr {
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.pie-pagina {
+  margin-top: 15%;
+}
+.pie-pagina h3 {
+  color: white;
+  font-family: "Saira Extra Condensed", sans-serif;
+  display: grid;
+  justify-content: center;
+}
+.pie-pagina .grupo1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  padding: 20px 0px;
+  justify-content: center;
+}
+.pie-pagina .grupo1 .redFooter {
+  color: whitesmoke;
+  font-family: "Saira Extra Condensed", sans-serif;
+  letter-spacing: 1px;
+}
+.pie-pagina .grupo2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  padding: 20px 0px;
+  justify-content: center;
+}
+.pie-pagina .grupo2 small {
+  color: rgb(253, 162, 230);
+  font-family: sans-serif;
+}
+
+@media (max-width: 710px) {
+  body {
+    font-size: 15px;
+    width: 100vh !important;
+  }
+}
+/* escritorio normales */
+@media (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+  .card {
+    margin-top: 4%;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  strong {
+    display: none;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .polaroid {
+    width: 66% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 4% !important;
+  }
 }/*# sourceMappingURL=estilos.css.map */

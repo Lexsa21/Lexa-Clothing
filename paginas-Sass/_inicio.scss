@@ -115,20 +115,16 @@ nav a:hover{
 }
 
 
-h1{
-    color: rgb(231, 231, 8);
-    background-image: url(../imagenes/vintage\ 11.png);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 900px;
-    width: 100%;
-}
-
-
 .subrayado{
     text-decoration: line-through;
     font-size: 200px;
     text-align: center; 
+    color: rgb(231, 231, 8);
+    background-image: url(../imagenes/imgInicio1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 900px;
+    width: 100%;
 }
 
 
@@ -174,6 +170,7 @@ h1{
 
 
 .container2{
+    @extend .container;
     text-align: center;
     background-color: rgba(255, 206, 142, 0.904);
     padding: 2%;
@@ -182,28 +179,7 @@ h1{
     height: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
-
-    .polaroid{
-        position: relative;
-        width: 16%;
-        margin: auto;
-        background-color: aliceblue;
-        padding: 3%;
-        color: black;
-
-        figcaption{
-            left: 0px;
-            bottom: 0px;
-            color: black;
-            font-family: $font1;
-        }
-
-        .pfigcaption{
-            color: black;
-            margin-top: 5%;
-            font-family: sans-serif;
-        }
-    }
+    
 }
 
 

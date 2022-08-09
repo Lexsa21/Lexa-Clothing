@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&family=Anek+Tamil:wght@100&family=Antonio:wght@100&family=Big+Shoulders+Display:wght@100&family=Dosis:wght@200&family=Expletus+Sans&family=Judson&family=Montaga&family=Mukta+Mahee:wght@200&family=Mukta:wght@200&family=Saira+Extra+Condensed:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
+/*font-family: 'Saira Extra Condensed', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.918);
+    margin: 0;
+    width: 100%;
+}
+
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgba(0, 0, 0, 0.950);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    position: sticky;
+    top: 0;
+    width: auto;
+    z-index: 2;
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img{
+        height: 50px;
+        margin-right: 10px;
+    }
+}
+
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+nav{
+    padding: 20px 0px;
+
+    ul li {
+        color: white;
+        font-family: 'Saira Extra Condensed', sans-serif;
+        font-size: 18px;
+    }
+    
+    .menu > li{
+        position: relative;
+        display: inline-block;
+    }
+}
+
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    padding: 10px;
+    
+}
+
+
+nav a:hover{
+    color: rgba(255, 255, 0, 0.884);
+}
+
+
+.submenu{
+    position: absolute;
+    width: 250%;
+    background-color: rgba(0, 0, 0, 0.918);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s;
+    list-style: none;
+}
+
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.subrayado5{
+    color: rgba(236, 126, 126, 0.815);
+    background-image: url(../imagenGrids/vg13.png);
+    background-size: center;
+    background-attachment: fixed;
+    height: 870px;
+    width: 100%;
+    font-size: 200px;
+    text-align: center; 
+}
+
+.form-register{
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    box-shadow: 7px 16px 37px #000;
+    
+    .controls{
+        width: 100%;
+        background-color: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-family: sans-serif;
+        font-size: 18px;
+        color: white;
+    }
+    
+    .botons2{
+        width: 100%;
+        background-color: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-family: sans-serif;
+        font-size: 18px;
+        color: white;
+    }
+    
+    .form-register .botons{
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin:  16px 0;
+        font-size: 16px;
+    }
+}
+
+
+.form-register h5{
+    font-size: 22px;
+    margin-bottom: 22px;
+    color: white;
+    font-family: Saira Extra Condensed, sans-serif;
+}
+
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+
+    .form-register a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .form-register a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+
+.contenedor{
+    height: 35vh;
+}
+
+
+footer{
+    background-color: #141414;
+    color: white;
+    width: 80%;
+    margin: auto;
+    font-family: $font1;
+
+    .main{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        padding: 3rem;
+
+        .brand{
+            width: 75%;
+        }
+
+        li{
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        input[type=text]{
+            padding: 8px 10px;
+            background-color: #141414;
+            color: white;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        
+        .btn{
+            padding: 9px 10px;
+            background-color: white;
+            color: black;
+            border: none;
+            outline: none;
+        }
+        
+        .accounts{
+            margin-top: 30px;
+
+            i{
+                margin-right: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .copyright{
+        color: rgb(255, 139, 226);
+        padding: 1.2rem;
+        text-align: center;
+        font-family: sans-serif;
+    }
+}
+
+
+h2{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+p{
+    opacity: 0.6;
+}
+
+
+hr{
+    opacity: 0.6;
+}

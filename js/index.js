@@ -40,14 +40,22 @@ sr.reveal('.drop-anterior4',{
 
 sr.reveal('.texts',{
     duration: 1400,
-    origin: 'left',
+    origin: 'top',
     distance: '400px'
 
 });
 
 
 sr.reveal('.galeria',{
-    duration: 2000,
+    duration: 1400,
+    origin: 'bottom',
+    distance: '400px'
+
+});
+
+
+sr.reveal('.containerMujer',{
+    duration: 1400,
     origin: 'bottom',
     distance: '400px'
 

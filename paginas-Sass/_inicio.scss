@@ -125,6 +125,7 @@ nav a:hover{
     background-attachment: fixed;
     height: 900px;
     width: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -137,7 +138,7 @@ nav a:hover{
 }
 
 
-.container{
+.containeer{
     text-align: center;
     background-color: rgba(22, 150, 236, 0.452);
     padding: 2%;
@@ -147,7 +148,7 @@ nav a:hover{
 
     .polaroid{
         position: relative;
-        width: 16%;
+        width: 22%;
         margin: auto;
         background-color: aliceblue;
         padding: 3%;
@@ -170,7 +171,7 @@ nav a:hover{
 
 
 .container2{
-    @extend .container;
+    @extend .containeer;
     text-align: center;
     background-color: rgba(255, 206, 142, 0.904);
     padding: 2%;
@@ -366,4 +367,28 @@ p{
 
 hr{
     opacity: 0.6;
+}
+
+@media (max-width: 1050px){
+    .brand{
+        display: none;
+    }
+}
+
+@media (max-width: 950px){
+    .datos{
+        display: none;
+    }
+}
+
+@media (max-width: 860px){
+
+    .textoo{
+        display: none;
+    }
+
+    .containeer{
+        display: flex;
+        flex-direction: column !important;
+    }
 }

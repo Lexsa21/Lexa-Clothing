@@ -506,7 +506,7 @@ hr {
 .pie-pagina .grupo-1 .redFooter {
   color: whitesmoke;
   font-family: "Saira Extra Condensed", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 .pie-pagina .grupo-2 {
   width: 100%;
@@ -521,12 +521,6 @@ hr {
   font-family: sans-serif;
 }
 
-@media (max-width: 710px) {
-  body {
-    font-size: 16px;
-    width: 100vh !important;
-  }
-}
 @media (max-width: 992px) {
   body {
     font-size: 18px;
@@ -535,9 +529,6 @@ hr {
     margin-top: 4%;
   }
   .carousel-indicators {
-    display: none;
-  }
-  strong {
     display: none;
   }
   .container2 {
@@ -549,6 +540,12 @@ hr {
     display: flex !important;
     flex-direction: column !important;
     margin-top: 4% !important;
+  }
+}
+@media (max-width: 710px) {
+  body {
+    font-size: 16px;
+    width: 100vh !important;
   }
 }
 @media (max-width: 600px) {
@@ -830,7 +827,7 @@ hr {
 .pie-pagina .grupo1 .redFooter {
   color: whitesmoke;
   font-family: "Saira Extra Condensed", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 .pie-pagina .grupo2 {
   width: 100%;
@@ -853,9 +850,6 @@ hr {
     margin-top: 4%;
   }
   .carousel-indicators {
-    display: none;
-  }
-  strong {
     display: none;
   }
   .container6 {

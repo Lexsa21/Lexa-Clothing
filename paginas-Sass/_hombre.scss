@@ -186,7 +186,7 @@ hr{
         .redFooter{
             color: whitesmoke;
             font-family:'Saira Extra Condensed', sans-serif;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
     }
     
@@ -206,15 +206,6 @@ hr{
 }
 
 
-
-
-@media (max-width: 710px) {
-    body { 
-        font-size: 16px; 
-        width: 100vh !important;
-    }
-}
-
 @media (max-width: 992px) {
     body { font-size: 18px; }
 
@@ -223,10 +214,6 @@ hr{
     }
     
     .carousel-indicators{
-        display: none;
-    }
-
-    strong{
         display: none;
     }
 
@@ -244,6 +231,15 @@ hr{
     }
     
 }
+
+
+@media (max-width: 710px) {
+    body { 
+        font-size: 16px; 
+        width: 100vh !important;
+    }
+}
+
 
 @media (max-width: 600px) {
 

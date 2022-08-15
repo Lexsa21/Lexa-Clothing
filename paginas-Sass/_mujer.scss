@@ -238,6 +238,7 @@ nav a:hover{
         bottom: 0px;
         color: black;
         font-family: 'Saira Extra Condensed', sans-serif;
+        padding-top: 3%;
     }
     
     .pfigcaption{
@@ -266,6 +267,7 @@ nav a:hover{
         bottom: 0px;
         color: black;
         font-family: 'Saira Extra Condensed', sans-serif;
+        padding-top: 3%;
     }
     
     .pfigcaption{
@@ -324,11 +326,48 @@ hr{
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 992px) {
+    body { font-size: 20px; }
+
+    .card{ 
+        margin-top: 4%;
+    }
+    
+    .carousel-indicators{
+        display: none;
+    }
+
+    strong{
+        display: none;
+    }
+
+    .container6{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .container7{
+        display: flex;
+        flex-direction: column !important;
+
+    }
+
+    .polaroid{
+        width: 66% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        margin-top: 4% !important;
+    }
+    
+}
+
+
+@media (max-width: 800px){
     header {
         flex-direction: column;
     }
 
+    .galeriaLanzamiento{
     .items2{
         display: none;
     }
@@ -349,11 +388,49 @@ hr{
         width: 100%;
     }
     }
+}
 
 
+@media (max-width: 710px) {
+    body { 
+        font-size: 20px; 
+        width: 100vh !important;
+    }
+}
 
-@media (max-width: 600px){
-    
+
+@media (max-width: 600px) {
+        
+    body { 
+        font-size: 20px; 
+        width: 100vh !important;
+    }
+
+    .container6{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .container7{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .polaroid{
+        width: 66% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        margin-top: 4% !important;
+    }
+
+    figcaption{
+        font-size: 24px !important;
+    }
+}
+
+
+@media (max-width: 500px){
+    .galeriaLanzamiento{
         .items3{
             grid-column: 1/5;
         }
@@ -384,73 +461,8 @@ hr{
         }
         }
 
-
-
-
-        @media (max-width: 710px) {
-            body { 
-                font-size: 20px; 
-                width: 100vh !important;
-            }
-        }
-        
-        @media (max-width: 992px) {
-            body { font-size: 20px; }
-        
-            .card{ 
-                margin-top: 4%;
-            }
-            
-            .carousel-indicators{
-                display: none;
-            }
-        
-            strong{
-                display: none;
-            }
-        
-            .container6{
-                display: flex;
-                flex-direction: column !important;
-            }
-
-            .container7{
-                display: flex;
-                flex-direction: column !important;
-        
-            }
-        
-            .polaroid{
-                width: 66% !important;
-                display: flex !important;
-                flex-direction: column !important;
-                margin-top: 4% !important;
-            }
-            
-        }
-        
-        @media (max-width: 600px) {
-        
-            body { 
-                font-size: 20px; 
-                width: 100vh !important;
-            }
-        
-            .container6{
-                display: flex;
-                flex-direction: column !important;
-            }
-
-            .container7{
-                display: flex;
-                flex-direction: column !important;
-            }
-        
-            .polaroid{
-                width: 66% !important;
-                display: flex !important;
-                flex-direction: column !important;
-                margin-top: 4% !important;
-            }
+        figcaption{
+            font-size: 28px !important;
         }
 
+    }

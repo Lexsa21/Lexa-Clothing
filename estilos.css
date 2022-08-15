@@ -766,6 +766,7 @@ nav a:hover {
   bottom: 0px;
   color: black;
   font-family: "Saira Extra Condensed", sans-serif;
+  padding-top: 3%;
 }
 .container6 .pfigcaption {
   color: black;
@@ -795,6 +796,7 @@ nav a:hover {
   bottom: 0px;
   color: black;
   font-family: "Saira Extra Condensed", sans-serif;
+  padding-top: 3%;
 }
 .container7 .pfigcaption {
   color: black;
@@ -843,56 +845,6 @@ hr {
   font-family: sans-serif;
 }
 
-@media (max-width: 700px) {
-  header {
-    flex-direction: column;
-  }
-  .items2 {
-    display: none;
-  }
-  .items4 {
-    display: none;
-  }
-  .items1 {
-    display: grid;
-    grid-column: 1/3;
-    width: 100%;
-  }
-  .items7 {
-    display: grid;
-    grid-column: 1/3;
-    width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  .items3 {
-    grid-column: 1/5;
-  }
-  .items6 {
-    grid-column: 1/5;
-  }
-  .items8 {
-    grid-column: 1/5;
-  }
-  .items2 {
-    display: none;
-  }
-  .items1 {
-    display: none;
-  }
-  .items4 {
-    display: none;
-  }
-  .items7 {
-    display: none;
-  }
-}
-@media (max-width: 710px) {
-  body {
-    font-size: 20px;
-    width: 100vh !important;
-  }
-}
 @media (max-width: 992px) {
   body {
     font-size: 20px;
@@ -921,6 +873,33 @@ hr {
     margin-top: 4% !important;
   }
 }
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  .galeriaLanzamiento .items2 {
+    display: none;
+  }
+  .galeriaLanzamiento .items4 {
+    display: none;
+  }
+  .galeriaLanzamiento .items1 {
+    display: grid;
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .galeriaLanzamiento .items7 {
+    display: grid;
+    grid-column: 1/3;
+    width: 100%;
+  }
+}
+@media (max-width: 710px) {
+  body {
+    font-size: 20px;
+    width: 100vh !important;
+  }
+}
 @media (max-width: 600px) {
   body {
     font-size: 20px;
@@ -939,6 +918,35 @@ hr {
     display: flex !important;
     flex-direction: column !important;
     margin-top: 4% !important;
+  }
+  figcaption {
+    font-size: 24px !important;
+  }
+}
+@media (max-width: 500px) {
+  .galeriaLanzamiento .items3 {
+    grid-column: 1/5;
+  }
+  .galeriaLanzamiento .items6 {
+    grid-column: 1/5;
+  }
+  .galeriaLanzamiento .items8 {
+    grid-column: 1/5;
+  }
+  .galeriaLanzamiento .items2 {
+    display: none;
+  }
+  .galeriaLanzamiento .items1 {
+    display: none;
+  }
+  .galeriaLanzamiento .items4 {
+    display: none;
+  }
+  .galeriaLanzamiento .items7 {
+    display: none;
+  }
+  figcaption {
+    font-size: 28px !important;
   }
 }
 /*font-family: 'Saira Extra Condensed', sans-serif;*/

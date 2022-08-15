@@ -9,6 +9,14 @@ window.sr = ScrollReveal();
 });
 
 
+sr.reveal('.subrayado4',{
+    duration: 1400,
+    origin: 'top',
+    distance: '-100px'
+
+});
+
+
     sr.reveal('.titulo-foto',{
         duration: 1200,
         origin: 'top',
@@ -17,21 +25,21 @@ window.sr = ScrollReveal();
 });
 
 sr.reveal('.drop-anterior',{
-    duration: 1500,
+    duration: 1200,
     origin: 'left',
     distance: '400px'
 
 });
 
 sr.reveal('.drop-anterior1',{
-    duration: 1500,
+    duration: 1200,
     origin: 'right',
     distance: '400px'
 
 });
 
 sr.reveal('.drop-anterior4',{
-    duration: 1500,
+    duration: 1200,
     origin: 'bottom',
     distance: '400px'
 
@@ -60,3 +68,18 @@ sr.reveal('.containerMujer',{
     distance: '400px'
 
 });
+
+
+sr.reveal('.container-table',{
+    duration: 1200,
+    origin: 'bottom',
+    distance: '400px'
+
+})
+
+sr.reveal('.galeriaLanzamiento',{
+    duration: 1200,
+    origin: 'bottom',
+    distance: '400px'
+
+})

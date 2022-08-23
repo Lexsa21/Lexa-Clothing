@@ -25,14 +25,14 @@ sr.reveal('.subrayado4',{
 });
 
 sr.reveal('.drop-anterior',{
-    duration: 1200,
+    duration: 1000,
     origin: 'left',
     distance: '400px'
 
 });
 
 sr.reveal('.drop-anterior1',{
-    duration: 1200,
+    duration: 1000,
     origin: 'right',
     distance: '400px'
 
@@ -77,12 +77,22 @@ sr.reveal('.container-table',{
 
 })
 
+
+sr.reveal('.container-table1',{
+    duration: 1200,
+    origin: 'left',
+    distance: '400px'
+
+})
+
+
 sr.reveal('.galeriaLanzamiento',{
     duration: 1200,
     origin: 'bottom',
     distance: '400px'
 
 })
+
 
 sr.reveal('.galeriahombre',{
     duration: 1200,

@@ -294,6 +294,12 @@ hr {
     display: flex;
     flex-direction: column !important;
   }
+  .subir {
+    height: 80px;
+    width: 80px;
+    font-size: 55px;
+    line-height: 70px;
+  }
 }
 /*font-family: 'Saira Extra Condensed', sans-serif;*/
 .subrayado2 {
@@ -909,6 +915,9 @@ hr {
 @media (max-width: 950px) {
   .container__main {
     padding: 50px;
+  }
+  .pie-pagina {
+    margin-top: 30%;
   }
 }
 /*font-family: 'Saira Extra Condensed', sans-serif;*/

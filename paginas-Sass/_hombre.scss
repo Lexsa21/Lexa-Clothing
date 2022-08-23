@@ -1,105 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&family=Anek+Tamil:wght@100&family=Antonio:wght@100&family=Big+Shoulders+Display:wght@100&family=Dosis:wght@200&family=Expletus+Sans&family=Judson&family=Montaga&family=Mukta+Mahee:wght@200&family=Mukta:wght@200&family=Saira+Extra+Condensed:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
 /*font-family: 'Saira Extra Condensed', sans-serif;*/
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
-body{
-    background-color: rgba(0, 0, 0, 0.918);
-    margin: 0;
-}
-
-
-header{
-    display: flex;
-    min-height: 70px;
-    background-color: rgba(0, 0, 0, 0.950);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    position: sticky;
-    top: 0;
-    width: auto;
-    z-index: 2;
-
-    .logo{
-        display: flex;
-        align-items: center;
-    }
-    
-    .logo img{
-        height: 50px;
-        margin-right: 10px;
-    }
-}
-
-
-img{
-    height: auto;
-    width: 100%;
-}
-
-
-a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-
-nav{
-    padding: 20px 0px;
-
-    ul li {
-        color: white;
-        font-family: 'Saira Extra Condensed', sans-serif;
-        font-size: 18px;
-    }
-
-    .menu > li{
-        position: relative;
-        display: inline-block;
-    }
-}
-
-
-nav a{
-    font-weight: 600;
-    padding-right: 10px;
-    padding: 10px;
-    
-}
-
-
-nav a:hover{
-    color: rgba(255, 255, 0, 0.884);
-}
-
-
-.submenu{
-    position: absolute;
-    width: 250%;
-    background-color: rgba(0, 0, 0, 0.918);
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.4s;
-    list-style: none;
-}
-
-.submenu li a{
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-}
-
-.menu li:hover .submenu{
-    visibility: visible;
-    opacity: 1;
-}
-
 
 .subrayado2{
     font-size: 200px;
@@ -112,6 +13,163 @@ nav a:hover{
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 200px;
+}
+
+
+.galeriahombre{
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.658), rgb(255, 160, 242));
+
+    .immg{
+        width: 350px;
+        height: 800px;
+        background: #fff;
+        background-size: cover;
+        border: 5px solid rgb(255, 253, 230);
+        transition: 2s;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+        cursor: pointer;
+    }
+
+    .immg:hover{
+        background-position: top;
+    }
+
+    .immg1{
+        background-image: url(../imagenes/galehombre2.png);
+        transition: all 500ms ease-out;
+    }
+    
+    .immg2{
+        background-image: url(../imagenes/galehombre1.png);
+        transition: all 500ms ease-out;
+    }
+    
+    .immg3{
+        background-image: url(../imagenes/galehombre3.png);
+        transition: all 500ms ease-out;
+    }
+}
+
+
+@mixin galehombre {
+    top: 0;
+    height: 100%;
+    background: rgba(255, 160, 242,0.5);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+@mixin galeho {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@mixin galecapa {
+    padding-top: 220px;
+    padding-bottom: 10px;
+}
+
+
+@mixin galeh {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 50px;
+    transition: all 500ms ease-out;
+    padding-top: 600px;
+}
+
+
+@mixin galep {
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 220px;
+    margin: auto;
+}
+
+
+.galeriahombre .immg1 .capa{
+    @include galehombre()
+}
+
+
+.galeriahombre .immg2 .capa{
+    @include galehombre()
+}
+
+
+.galeriahombre .immg3 .capa{
+    @include galehombre()
+}
+
+
+.galeriahombre .immg1:hover > .capa{
+    @include galeho()
+}
+
+
+.galeriahombre .immg2:hover > .capa{
+    @include galeho()
+}
+
+
+.galeriahombre .immg3:hover > .capa{
+    @include galeho()
+}
+
+
+.galeriahombre .immg1:hover > .capa h3{
+    @include galecapa()
+}
+
+
+.galeriahombre .immg2:hover > .capa h3{
+    @include galecapa()
+}
+
+
+.galeriahombre .immg3:hover > .capa h3{
+    @include galecapa()
+}
+
+
+.galeriahombre .immg1 .capa h3{
+    @include galeh()
+}
+
+
+.galeriahombre .immg2 .capa h3{
+    @include galeh()
+}
+
+
+.galeriahombre .immg3 .capa h3{
+    @include galeh()
+}
+
+
+.galeriahombre .immg1 .capa p{
+    @include galep()
+}
+
+
+.galeriahombre .immg2 .capa p{
+    @include galep()
+}
+
+
+.galeriahombre .immg3 .capa p{
+    @include galep()
 }
 
 
@@ -206,6 +264,19 @@ hr{
 }
 
 
+@media (max-width: 1100px) {
+.galeriahombre{
+    display: flex;
+    flex-direction: column !important;
+}
+
+.immg{
+    width: 66%;
+    margin-bottom: 50px;
+}
+}
+
+
 @media (max-width: 992px) {
     body { font-size: 18px; }
 
@@ -229,7 +300,6 @@ hr{
         flex-direction: column !important;
         margin-top: 4% !important;
     }
-    
 }
 
 

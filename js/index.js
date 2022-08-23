@@ -39,7 +39,7 @@ sr.reveal('.drop-anterior1',{
 });
 
 sr.reveal('.drop-anterior4',{
-    duration: 1200,
+    duration: 1000,
     origin: 'bottom',
     distance: '400px'
 
@@ -83,3 +83,10 @@ sr.reveal('.galeriaLanzamiento',{
     distance: '400px'
 
 })
+
+sr.reveal('.galeriahombre',{
+    duration: 1200,
+    origin: 'bottom',
+    distance: '400px'
+
+});

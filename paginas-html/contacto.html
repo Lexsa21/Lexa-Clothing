@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactanos en Lexa Clothing. Completá el formulario o escribinos al (011) 5168-6056. Atención al cliente de lunes a viernes de 9 a 18hs.">
     <meta name="keywords" content="contacto, formulario, datos, msj, e-mail, contraseña, @">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Contactanos | LEXSA CLOTHING</title>
 </head>
 
 <body class="bodycontacto">
     <header>
-        <a href="./index.html" class="logo">
+        <a href="../index.html" class="logo">
             <img src="../imagenes/logo.png" alt="logo de la empresa" />
         </a>
         <nav>
@@ -30,13 +30,14 @@
                 </li>
                 <li><a href="../paginas-html/talles.html">Guía de Talles</a></li>
                 <li><a href="../paginas-html/contacto.html">Contacto</a></li>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
             </ul>
         </nav>
     </header>
+    <main>
     <br>
-    <div class="contactoo">
-        <div class="call">
+    <section class="contacto-section">
+        <article class="call">
             <h2>DUDAS ? CONTACTANOS !</h2>
             <strong>¿Tenés preguntas o sugerencias?</strong>
             <p>Con mucho gusto te atenderemos. Podés llamarnos al (011) 5168-6056 o mandarnos un e-mail a:
@@ -44,48 +45,58 @@
             <strong>Servicio al cliente</strong>
             <p>Nuestros horarios de atención son los días hábiles de lunes a viernes de 9:00 - 18:00 horas.</p>
             <a href="#" class="botoncontacto">Ver más</a>
-        </div>
+        </article>
         <section class="form-register">
             <h5>Formulario Registro</h5>
-            <input class="controls" type="text1" name="nombres" id="nombres" placeholder="Ingrese su nombre">
-            <input class="controls" type="text1" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-            <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-            <input class="botons2" type="submit" value="Registrar">
+            <form action="" id="formRegistro" novalidate>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+                <span class="error-msg" id="error-nombres"></span>
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+                <span class="error-msg" id="error-apellidos"></span>
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                <span class="error-msg" id="error-correo"></span>
+                <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+                <span class="error-msg" id="error-password"></span>
+                <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                <input class="boton-submit" type="submit" value="Registrar">
+                <span class="exito-msg" id="exito-msg"></span>
+            </form>
             <p><a href="#">¿Ya tengo Cuenta?</a></p>
         </section>
-    </div>
+    </section>
     <br>
+    </main>
     <footer>
         <div class="main">
             <div class="brand">
-                <h3>Brand Name</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum animi ipsum! Sed nihil
-                    consequatur vero maxime ipsa quas dolore consequuntur nostrum. Fuga repudiandae, harum ab ex modi
-                    labore iste.</p>
+                <h3>Lexa Clothing</h3>
+                <p>Somos una empresa de indumentaria argentina que busca la mejor calidad en sus productos, con una amplia impronta en la moda actual.</p>
             </div>
             <div class="subtitulosfooter1">
-                <h3>Company</h3>
-                <li><a href="#">Terminos y condiciones</a></li>
-                <li><a href="#">Privacidad y Politica</a></li>
-                <li><a href="#">terms & condition</a></li>
-                <li><a href="#">FAQS</a></li>
+                <h3>Compañía</h3>
+                <ul>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Privacidad y Politica</a></li>
+                    <li><a href="#">FAQS</a></li>
+                </ul>
             </div>
             <div class="subtitulosfooter1">
-                <h3>About</h3>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Store</a></li>
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#">Equipo</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Tienda</a></li>
+                </ul>
             </div>
             <div class="subtitulosfooter1">
-                <h3>Help</h3>
-                <li><a href="#">Getting Started</a></li>
-                <li><a href="#">Feedback</a></li>
-                <li><a href="#">Network Status</a></li>
-                <li><a href="#">Customer Support</a></li>
-                <li><a href="#">Otros Servicios</a></li>
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Estado de Compra</a></li>
+                    <li><a href="#">Atención al Cliente</a></li>
+                    <li><a href="#">Otros Servicios</a></li>
+                </ul>
             </div>
             <div class="subtitulosfooter">
                 <h3>Newsletter</h3>
@@ -102,13 +113,94 @@
             </div>
         </div>
         <hr>
-        <p class="copyright">All Right Reserved &copy; 2020 Brand Name</p>
+        <p class="copyright">All Right Reserved &copy; 2022 | LEXA Clothing</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+    <style>
+        .error-msg {
+            color: #ff6b6b;
+            font-size: 13px;
+            font-family: sans-serif;
+            display: block;
+            margin-bottom: 10px;
+            margin-top: -10px;
+        }
+        .exito-msg {
+            color: #6bff8e;
+            font-size: 15px;
+            font-family: sans-serif;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .controls.invalido {
+            border-color: #ff6b6b;
+        }
+    </style>
+    <script>
+        document.getElementById('formRegistro').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nombres = document.getElementById('nombres');
+            const apellidos = document.getElementById('apellidos');
+            const correo = document.getElementById('correo');
+            const password = document.getElementById('password');
+            const exitoMsg = document.getElementById('exito-msg');
+            let valido = true;
+
+            // Limpiar errores previos
+            document.querySelectorAll('.error-msg').forEach(el => el.textContent = '');
+            document.querySelectorAll('.controls').forEach(el => el.classList.remove('invalido'));
+            exitoMsg.textContent = '';
+
+            // Validar nombre
+            if (nombres.value.trim() === '') {
+                document.getElementById('error-nombres').textContent = 'El nombre es obligatorio.';
+                nombres.classList.add('invalido');
+                valido = false;
+            }
+
+            // Validar apellido
+            if (apellidos.value.trim() === '') {
+                document.getElementById('error-apellidos').textContent = 'El apellido es obligatorio.';
+                apellidos.classList.add('invalido');
+                valido = false;
+            }
+
+            // Validar email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (correo.value.trim() === '') {
+                document.getElementById('error-correo').textContent = 'El correo es obligatorio.';
+                correo.classList.add('invalido');
+                valido = false;
+            } else if (!emailRegex.test(correo.value.trim())) {
+                document.getElementById('error-correo').textContent = 'Ingresá un correo válido.';
+                correo.classList.add('invalido');
+                valido = false;
+            }
+
+            // Validar contraseña
+            if (password.value.trim() === '') {
+                document.getElementById('error-password').textContent = 'La contraseña es obligatoria.';
+                password.classList.add('invalido');
+                valido = false;
+            } else if (password.value.trim().length < 6) {
+                document.getElementById('error-password').textContent = 'La contraseña debe tener al menos 6 caracteres.';
+                password.classList.add('invalido');
+                valido = false;
+            }
+
+            // Si todo está bien
+            if (valido) {
+                exitoMsg.textContent = '¡Registro exitoso! Bienvenido a Lexa Clothing.';
+                this.reset();
+            }
+        });
     </script>
 </body>
 

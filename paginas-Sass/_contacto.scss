@@ -1,247 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&family=Anek+Tamil:wght@100&family=Antonio:wght@100&family=Big+Shoulders+Display:wght@100&family=Dosis:wght@200&family=Expletus+Sans&family=Judson&family=Montaga&family=Mukta+Mahee:wght@200&family=Mukta:wght@200&family=Saira+Extra+Condensed:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
-/*font-family: 'Saira Extra Condensed', sans-serif;*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.bodycontacto {
+  background-color: rgba(0, 0, 0, 0.918);
+  margin: 0;
+  width: 100%;
+  background-image: linear-gradient(135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+  background-size: 500%;
+  animation: fanimado 10s infinite;
 }
 
-
-.bodycontacto{
-    background-color: rgba(0, 0, 0, 0.918);
-    margin: 0;
-    width: 100%;
-    background-image: linear-gradient(135deg,#00B7D4,#505488,#2F3F80,#161569,#5A4894,#A950A1, #FF7CAE);
-    background-size: 500%;
-    animation: fanimado 10s infinite;
+@keyframes fanimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.contacto-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contacto-section .botoncontacto {
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 2px solid black;
+  background-image: linear-gradient(135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+  background-size: 500%;
+  animation: fanimado 10s infinite;
 }
 
-
-@keyframes fanimado{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
+.call {
+  width: 900px;
+  background-color: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 200px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  box-shadow: 7px 16px 37px #000;
+  border: 2px solid rgba(255, 255, 142, 0.884);
 }
 
-
-.contactoo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    .botoncontacto{
-        padding: 10px;
-        
-        border-radius: 2px;
-        box-shadow: 2px solid black;
-        background-image: linear-gradient(135deg,#00B7D4,#505488,#2F3F80,#161569,#5A4894,#A950A1, #FF7CAE);
-        background-size: 500%;
-        animation: fanimado 10s infinite;
-    }
+.call h2 {
+  margin-top: 15px;
+  font-size: 50px;
 }
 
-
-.call{
-    width: 900px;
-    background-color: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 200px;
-    border-radius: 4px;
-    font-family: sans-serif;
-    box-shadow: 7px 16px 37px #000;
-    border: 2px solid rgba(255, 255, 142, 0.884);
+.call strong {
+  color: whitesmoke;
 }
 
-
-.call h2{
-    margin-top: 15px;
-    font-size: 50px;
+.call p {
+  color: #fff;
 }
 
-
-.call strong{
-    color: whitesmoke;
+.form-register {
+  width: 450px;
+  background-color: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  box-shadow: 7px 16px 37px #000;
+}
+.form-register .controls {
+  width: 100%;
+  background-color: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.form-register .boton-submit {
+  width: 100%;
+  background-color: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.form-register .form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
 }
 
-
-.call p{
-    color: #fff;
+.form-register h5 {
+  font-size: 22px;
+  margin-bottom: 22px;
+  color: white;
+  font-family: Saira Extra Condensed, sans-serif;
 }
 
-
-.form-register{
-    width: 450px;
-    background-color: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: sans-serif;
-    box-shadow: 7px 16px 37px #000;
-    
-    .controls{
-        width: 100%;
-        background-color: #24303c;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid #1f53c5;
-        font-family: sans-serif;
-        font-size: 18px;
-        color: white;
-    }
-    
-    .botons2{
-        width: 100%;
-        background-color: #24303c;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid #1f53c5;
-        font-family: sans-serif;
-        font-size: 18px;
-        color: white;
-    }
-    
-    .form-register .botons{
-        width: 100%;
-        background: #1f53c5;
-        border: none;
-        padding: 12px;
-        color: white;
-        margin:  16px 0;
-        font-size: 16px;
-    }
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  color: white;
+}
+.form-register p .form-register a {
+  color: white;
+  text-decoration: none;
+}
+.form-register p .form-register a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
-
-.form-register h5{
-    font-size: 22px;
-    margin-bottom: 22px;
-    color: white;
-    font-family: Saira Extra Condensed, sans-serif;
+footer {
+  background-color: #141414;
+  color: white;
+  width: 80%;
+  margin: auto;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+footer .main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 3rem;
+  margin-top: 15%;
+}
+footer .main .brand {
+  width: 75%;
+}
+footer .main li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+footer .main input[type=text] {
+  padding: 8px 10px;
+  background-color: #141414;
+  color: white;
+  border: 1px solid #ccc;
+  outline: none;
+}
+footer .main .btn {
+  padding: 9px 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  outline: none;
+}
+footer .main .accounts {
+  margin-top: 30px;
+}
+footer .main .accounts i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+footer .copyright {
+  color: rgb(255, 139, 226);
+  padding: 1.2rem;
+  text-align: center;
+  font-family: sans-serif;
 }
 
+/* ================================
+   RESPONSIVE - MEDIA QUERIES
+   ================================ */
 
-.form-register p{
-    height: 40px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 40px;
-    color: white;
-
-    .form-register a{
-        color: white;
-        text-decoration: none;
-    }
-    
-    .form-register a:hover{
-        color: white;
-        text-decoration: underline;
-    }
-}
-
-
-footer{
-    background-color: #141414;
-    color: white;
-    width: 80%;
-    margin: auto;
-    font-family: $font1;
-
-    .main{
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        padding: 3rem;
-        margin-top: 15%;
-
-        .brand{
-            width: 75%;
-        }
-
-        li{
-            list-style: none;
-            margin-bottom: 10px;
-        }
-
-        input[type=text]{
-            padding: 8px 10px;
-            background-color: #141414;
-            color: white;
-            border: 1px solid #ccc;
-            outline: none;
-        }
-        
-        .btn{
-            padding: 9px 10px;
-            background-color: white;
-            color: black;
-            border: none;
-            outline: none;
-        }
-        
-        .accounts{
-            margin-top: 30px;
-
-            i{
-                margin-right: 20px;
-                font-size: 20px;
-            }
-        }
-    }
-
-    .copyright{
-        color: rgb(255, 139, 226);
-        padding: 1.2rem;
-        text-align: center;
-        font-family: sans-serif;
-    }
-}
-
-
-@media (max-width: 1400px) {
-    .contactoo{
-        display: flex;
-        flex-direction: column !important;
-    }
-    
-    .call{
-        width: 66%;
-        margin-bottom: 50px;
-    }
-    
-
-    .form-register{
-        width: 66%;
-        margin-bottom: 50px;
-    }
-    }
-
-
-    @media (max-width: 1000px) {
-        .main{
-            display: flex !important;
-            flex-direction: column !important;
-        }
-
-        .subtitulosfooter{
-            margin: 4%;
-        }
-
-        .subtitulosfooter1{
-            margin: 4%;
-        }
-    }
-
-    @media (max-width: 650px){
-    .subtitulosfooter1{
-        display: none;
-    }
-}
+/* --- TABLET GRANDE (max 1100px) --- */

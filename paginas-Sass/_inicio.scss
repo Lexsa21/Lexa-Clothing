@@ -1,349 +1,335 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&family=Anek+Tamil:wght@100&family=Antonio:wght@100&family=Big+Shoulders+Display:wght@100&family=Dosis:wght@200&family=Expletus+Sans&family=Judson&family=Montaga&family=Mukta+Mahee:wght@200&family=Mukta:wght@200&family=Saira+Extra+Condensed:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
-/*font-family: 'Anek Bangla', sans-serif;
-font-family: 'Anek Tamil', sans-serif;
-font-family: 'Antonio', sans-serif;
-font-family: 'Dosis', sans-serif;
-font-family: 'Expletus Sans', cursive;
-font-family: 'Judson', serif;
-font-family: 'Montaga', serif;
-font-family: 'Mukta', sans-serif;
-font-family: 'Saira Extra Condensed', sans-serif; */
-
-$font1: 'Saira Extra Condensed', sans-serif;
-$color1: whitesmoke;
-$color2: rgba(0, 0, 0, 0.918);
-$color3: rgba(0, 0, 0, 0.950);
-
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&family=Anek+Tamil:wght@100&family=Antonio:wght@100&family=Big+Shoulders+Display:wght@100&family=Dosis:wght@200&family=Expletus+Sans&family=Judson&family=Montaga&family=Mukta+Mahee:wght@200&family=Mukta:wght@200&family=Saira+Extra+Condensed:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-body{
-    background-color: $color2;
-    margin: 0;
+body {
+  background-color: rgba(0, 0, 0, 0.918);
+  margin: 0;
 }
 
-
-header{
-    display: flex;
-    min-height: 70px;
-    background-color: $color3;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    font-family: $font1;
-    position: sticky;
-    top: 0;
-    width: auto;
-    z-index: 2;
-
-    .logo{
-        display: flex;
-        align-items: center;
-    }
-
-    .logo img{
-        height: 50px;
-        margin-right: 10px;
-    }
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  position: sticky;
+  top: 0;
+  width: auto;
+  z-index: 2;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
 }
 
-
-img{
-    height: auto;
-    width: 100%;
+img {
+  height: auto;
+  width: 100%;
 }
 
-
-a{
-    text-decoration: none;
-    color: whitesmoke;
+a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
-
-nav{
-    padding: 20px 0px;
-
-    ul li {
-        color: white;
-        font-family: $font1;
-        font-size: 18px;
-    }
-    
-    .menu{
-        margin-bottom: 0rem !important;
-
-        .fa-solid{
-            color: whitesmoke;
-            padding-right: 4px;
-        }
-    }
-    
-    .menu > li{
-        position: relative;
-        display: inline-block;
-
-        .submenu{
-            position: absolute;
-            width: 250%;
-            background-color: $color2;
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.4s;
-            list-style: none;
-
-            .submenu li a{
-                display: block;
-                padding: 15px;
-                text-decoration: none;
-            }
-        }
-    }
+nav {
+  padding: 20px 0px;
+}
+nav ul li {
+  color: white;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 18px;
+}
+nav .menu {
+  margin-bottom: 0;
+}
+nav .menu .fa-solid {
+  color: whitesmoke;
+  padding-right: 4px;
+}
+nav .menu > li {
+  position: relative;
+  display: inline-block;
+}
+nav .menu > li .submenu {
+  position: absolute;
+  width: 250%;
+  background-color: rgba(0, 0, 0, 0.918);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+  list-style: none;
+}
+nav .menu > li .submenu .submenu li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
 }
 
-
-nav a{
-    font-weight: 600;
-    padding-right: 10px;
-    padding: 10px;
-    
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+  padding: 10px;
 }
 
-
-nav a:hover{
-    color: rgba(255, 255, 0, 0.884);
+nav a:hover {
+  color: rgba(255, 255, 0, 0.884);
 }
 
-
-.menu li:hover .submenu{
-    visibility: visible;
-    opacity: 1;
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
 }
 
-
-.subrayado{
-    text-decoration: line-through;
-    font-size: 200px;
-    text-align: center; 
-    color: rgb(231, 231, 8);
-    background-image: url(../imagenes/imgInicio1.png);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 900px;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
+.subrayado {
+  text-decoration: line-through;
+  font-size: 200px;
+  text-align: center;
+  color: rgb(231, 231, 8);
+  background-image: url(../imagenes/imgInicio1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 900px;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
 }
 
-
-.titulo-foto{
-    text-align: center;
-    margin: 5%;
-    color: whitesmoke;
-    font-size: 19px;
-    font-family: $font1;
+.titulo-foto {
+  text-align: center;
+  margin: 5%;
+  color: whitesmoke;
+  font-size: 19px;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 
-
-.containeer{
-    text-align: center;
-    background-color: rgba(22, 150, 236, 0.452);
-    padding: 2%;
-    display: flex;
-    width: auto;
-    height: 100%;
-
-    .polaroid{
-        position: relative;
-        width: 22%;
-        margin: auto;
-        background-color: aliceblue;
-        padding: 3%;
-        color: black;
-
-        figcaption{
-            left: 0px;
-            bottom: 0px;
-            color: black;
-            font-family: $font1;
-        }
-
-        .pfigcaption{
-            color: black;
-            margin-top: 5%;
-            font-family: sans-serif;
-        }
-    }
+.container-productos, .container2 {
+  text-align: center;
+  background-color: rgba(22, 150, 236, 0.452);
+  padding: 2%;
+  display: flex;
+}
+.container-productos .polaroid, .container2 .polaroid {
+  position: relative;
+  width: 22%;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 3%;
+  color: black;
+}
+.container-productos .polaroid figcaption, .container2 .polaroid figcaption {
+  left: 0px;
+  bottom: 0px;
+  color: black;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+.container-productos .polaroid .pfigcaption, .container2 .polaroid .pfigcaption {
+  color: black;
+  margin-top: 5%;
+  font-family: sans-serif;
 }
 
-
-.container2{
-    @extend .containeer;
-    text-align: center;
-    background-color: rgba(255, 206, 142, 0.904);
-    padding: 2%;
-    display: flex;
-    width: auto;
-    height: 100%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    
+.container2 {
+  background-color: rgba(255, 206, 142, 0.904);
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
-
 
 h2 {
-    color: white;
-    font-family: 'Big Shoulders Display', cursive;
-    width: 100%;
-    margin-top: 10%;
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+  width: 100%;
+  margin-top: 10%;
 }
 
-
-.drop-anterior{
-    display: flex;
-    background-color:rgba(0, 255, 221, 0.616);
-    width: 100%;
-    height: 80vh;
-    text-align: center;
-    position: relative;
-    margin-top: 3%;
-
-    .imagen-drop{
-        width: 65%;
-        background-position: center;
-        background-size: cover;
-        height: 100%;
-    }
-
-    .titulo-imagen1{
-        color: $color1;
-        font-family: $font1;
-        width: 34%;
-    }
+.drop-anterior {
+  display: flex;
+  background-color: rgba(0, 255, 221, 0.616);
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  position: relative;
+  margin-top: 3%;
+}
+.drop-anterior .imagen-drop {
+  width: 65%;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.drop-anterior .titulo-imagen1 {
+  color: whitesmoke;
+  font-family: "Saira Extra Condensed", sans-serif;
+  width: 34%;
 }
 
-
-.drop-anterior1{
-    display: flex;
-    background-color:rgba(215, 243, 149, 0.815);
-    width: 100%;
-    height: 80vh;
-    text-align: center;
-    position: relative;
-    margin-top: 0%;
-
-    .imagen-drop2{
-        width: 65%;
-        background-position: center;
-        background-size: cover;
-        height: 100%;
-        margin-left: auto;
-    }
-
-    .titulo-imageen1{
-        color: $color1;
-        font-family: $font1;
-        width: 34%;
-    }
+.drop-anterior1 {
+  display: flex;
+  background-color: rgba(215, 243, 149, 0.815);
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  position: relative;
+}
+.drop-anterior1 .imagen-drop2 {
+  width: 65%;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin-left: auto;
+}
+.drop-anterior1 .titulo-imagen1 {
+  color: whitesmoke;
+  font-family: "Saira Extra Condensed", sans-serif;
+  width: 34%;
 }
 
-
-.imagen-drop>img,.imagen-drop2>img{
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
+.imagen-drop > img, .imagen-drop2 > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
-
-.drop-anterior4{
-    display: flex;
-    background-color:rgba(236, 126, 126, 0.815);
-    width: 100%;
-    height: 70vh;
-    text-align: center;
-    position: relative;
-    margin-top: 0%;
-
-    .titulo-imagen2{
-        color: $color1;
-        font-family: $font1;
-        width: 34%;
-        text-align: left;
-
-        .cristal{
-            text-align: left;
-            width: 5%;
-            margin: 5%;
-            margin-top: 40%;
-        }
-    }
-
-    .titulo-imagen3{
-        color: whitesmoke;
-        font-family: $font1;
-        width: 34%;
-    }
+.drop-anterior4 {
+  display: flex;
+  background-color: rgba(236, 126, 126, 0.815);
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+  position: relative;
+}
+.drop-anterior4 .titulo-imagen2 {
+  color: whitesmoke;
+  font-family: "Saira Extra Condensed", sans-serif;
+  width: 34%;
+  text-align: left;
+}
+.drop-anterior4 .titulo-imagen2 .cristal {
+  text-align: left;
+  width: 5%;
+  margin: 5%;
+  margin-top: 40%;
+}
+.drop-anterior4 .titulo-imagen3 {
+  color: whitesmoke;
+  font-family: "Saira Extra Condensed", sans-serif;
+  width: 34%;
 }
 
-
-.textoo{
-    font-size: 30px;
-    margin: 5%;
-    margin-top: 0%;
+.texto {
+  font-size: 30px;
+  margin: 5%;
 }
 
-
-h4{
-    color: white;
-    font-family: $font1;
-    font-size: 50px;
-    margin-top: 40%;
+h4 {
+  color: white;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 50px;
+  margin-top: 40%;
 }
 
-
-p{
-    opacity: 0.6;
+p {
+  opacity: 0.6;
 }
 
-
-hr{
-    opacity: 0.6;
+hr {
+  opacity: 0.6;
 }
 
-
-.subir{
-    height: 50px;
-    width: 50px;
-    background-color: black;
-    color: rgb(250, 250, 57);
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    text-align: center;
-    font-size: 30px;
-    line-height: 40px;
-    border: 3px solid #fff;
-    box-shadow: 0 0 25px rgb(255, 255, 0);
+.subir {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: rgb(250, 250, 57);
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 25px rgb(255, 255, 0);
 }
 
+body {
+  background-color: rgba(0, 0, 0, 0.918);
+  margin: 0;
+}
 
-@media (max-width: 860px){
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  position: sticky;
+  top: 0;
+  width: auto;
+  z-index: 2;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
 
-    .textoo{
-        display: none;
-    }
+img {
+  height: auto;
+  width: 100%;
+}
 
-    .containeer{
-        display: flex;
-        flex-direction: column !important;
-    }
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
 
-    .subir{
-        height: 90px;
-        width: 90px;
-        font-size: 65px;
-        line-height: 75px;
-    }
+nav {
+  padding: 20px 0px;
+}
+nav ul li {
+  color: white;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 18px;
+}
+nav .menu {
+  margin-bottom: 0rem !important;
+}
+nav .menu .fa-solid {
+  color: whitesmoke;
+  padding-right: 4px;
+}
+nav .menu > li {
+  position: relative;
+  display: inline-block;
+}
+nav .menu > li .submenu {
+  position: absolute;
+  width: 250%;
+  background-color: rgba(0, 0, 0, 0.918);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+  list-style: none;
+}
+nav .menu > li .submenu .submenu li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
 }

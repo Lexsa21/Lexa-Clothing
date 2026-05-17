@@ -1,102 +1,79 @@
-window.sr = ScrollReveal();
+const sr = ScrollReveal();
 
-
-    sr.reveal('.subrayado',{
-        duration: 1400,
-        origin: 'bottom',
-        distance: '-100px'
-
+sr.reveal('.subrayado', {
+    duration: 1400,
+    origin: 'bottom',
+    distance: '-100px'
 });
 
-
-sr.reveal('.subrayado4',{
+sr.reveal('.subrayado4', {
     duration: 1400,
     origin: 'top',
     distance: '-100px'
-
 });
 
-
-    sr.reveal('.titulo-foto',{
-        duration: 1200,
-        origin: 'top',
-        distance: '-100px'
-
+sr.reveal('.titulo-foto', {
+    duration: 1200,
+    origin: 'top',
+    distance: '-100px'
 });
 
-sr.reveal('.drop-anterior',{
+sr.reveal('.drop-anterior', {
     duration: 1000,
     origin: 'left',
     distance: '400px'
-
 });
 
-sr.reveal('.drop-anterior1',{
+sr.reveal('.drop-anterior1', {
     duration: 1000,
     origin: 'right',
     distance: '400px'
-
 });
 
-sr.reveal('.drop-anterior4',{
+sr.reveal('.drop-anterior4', {
     duration: 1000,
     origin: 'bottom',
     distance: '400px'
-
 });
 
-
-sr.reveal('.texts',{
+sr.reveal('.texts', {
     duration: 1400,
     origin: 'top',
     distance: '400px'
-
 });
 
-
-sr.reveal('.galeria',{
+sr.reveal('.galeria', {
     duration: 1400,
     origin: 'bottom',
     distance: '400px'
-
 });
 
-
-sr.reveal('.containerMujer',{
+sr.reveal('.containerMujer', {
     duration: 1400,
     origin: 'bottom',
     distance: '400px'
-
 });
 
-
-sr.reveal('.container-table',{
+sr.reveal('.container-table', {
     duration: 1200,
     origin: 'bottom',
     distance: '400px'
+});
 
-})
-
-
-sr.reveal('.container-table1',{
+sr.reveal('.container-table1', {
     duration: 1200,
     origin: 'left',
     distance: '400px'
+});
 
-})
-
-
-sr.reveal('.galeriaLanzamiento',{
+sr.reveal('.galeriaLanzamiento', {
     duration: 1200,
     origin: 'bottom',
     distance: '400px'
+});
 
-})
-
-
-sr.reveal('.galeriahombre',{
+sr.reveal('.galeriahombre', {
     duration: 1200,
     origin: 'bottom',
     distance: '400px'
-
 });

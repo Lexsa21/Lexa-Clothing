@@ -1,0 +1,251 @@
+/* ================================
+   RESPONSIVE - MEDIA QUERIES
+   ================================ */
+
+/* --- TABLET GRANDE (max 1100px) --- */
+@media (max-width: 1100px) {
+  .galeriahombre {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .galeriahombre .img {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .call {
+    width: 80%;
+  }
+  .form-register {
+    width: 80%;
+  }
+  .container__main {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+/* --- TABLET (max 992px) --- */
+@media (max-width: 992px) {
+  .subrayado,
+  .subrayado2,
+  .subrayado3,
+  .subrayado4 {
+    font-size: 120px;
+    height: 500px;
+  }
+  .container-productos,
+  .container2,
+  .container5,
+  .container6,
+  .container7 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-productos .polaroid,
+  .container2 .polaroid,
+  .container5 .polaroid,
+  .container6 .polaroid,
+  .container7 .polaroid {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .drop-anterior,
+  .drop-anterior1 {
+    flex-direction: column;
+    height: auto;
+  }
+  .drop-anterior .imagen-drop,
+  .drop-anterior1 .imagen-drop2 {
+    width: 100%;
+    height: 400px;
+  }
+  .drop-anterior .titulo-imagen1,
+  .drop-anterior1 .titulo-imagen1 {
+    width: 100%;
+    padding: 20px;
+  }
+  .drop-anterior4 {
+    flex-direction: column;
+    height: auto;
+  }
+  .drop-anterior4 .titulo-imagen2,
+  .drop-anterior4 .titulo-imagen3 {
+    width: 100%;
+    padding: 20px;
+  }
+  h4 {
+    margin-top: 10%;
+    font-size: 40px;
+  }
+  .galeriaLanzamiento {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .galeriaLanzamiento .items1,
+  .galeriaLanzamiento .items2,
+  .galeriaLanzamiento .items3,
+  .galeriaLanzamiento .items4,
+  .galeriaLanzamiento .items5,
+  .galeriaLanzamiento .items6,
+  .galeriaLanzamiento .items7,
+  .galeriaLanzamiento .items8 {
+    grid-column: auto;
+    grid-row: auto;
+    height: 250px;
+  }
+  .contacto-section {
+    grid-template-columns: 1fr;
+  }
+  footer .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container__main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* --- MOBILE GRANDE (max 768px) --- */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  nav {
+    width: 100%;
+    padding: 10px 0;
+  }
+  nav .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  nav .menu > li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  nav .menu > li .submenu {
+    position: relative;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    display: none;
+  }
+  nav .menu > li:hover .submenu {
+    display: block;
+  }
+  .subrayado,
+  .subrayado2,
+  .subrayado3,
+  .subrayado4 {
+    font-size: 80px;
+    height: 350px;
+    background-attachment: scroll;
+  }
+  .subrayado {
+    background-position: center center;
+  }
+  .subrayado2 {
+    background-position: center center;
+  }
+  .subrayado3 {
+    background-position: center 22%;
+  }
+  .subrayado4 {
+    background-position: center 30%;
+  }
+  .texto {
+    display: none;
+  }
+  .call {
+    width: 90%;
+    margin-top: 40px;
+  }
+  .form-register {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .main {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+  .subir {
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    line-height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* --- MOBILE (max 480px) --- */
+@media (max-width: 480px) {
+  .subrayado,
+  .subrayado2,
+  .subrayado3,
+  .subrayado4 {
+    font-size: 55px;
+    height: 250px;
+  }
+  .titulo-foto {
+    font-size: 16px;
+    margin: 8%;
+  }
+  h2 {
+    font-size: 1.4rem;
+    margin-top: 8%;
+  }
+  h4 {
+    font-size: 30px;
+    margin-top: 5%;
+  }
+  .container-productos .polaroid,
+  .container2 .polaroid,
+  .container5 .polaroid,
+  .container6 .polaroid,
+  .container7 .polaroid {
+    width: 90%;
+  }
+  .galeriaLanzamiento {
+    grid-template-columns: 1fr;
+  }
+  .galeriaLanzamiento .items1,
+  .galeriaLanzamiento .items2,
+  .galeriaLanzamiento .items3,
+  .galeriaLanzamiento .items4,
+  .galeriaLanzamiento .items5,
+  .galeriaLanzamiento .items6,
+  .galeriaLanzamiento .items7,
+  .galeriaLanzamiento .items8 {
+    height: 200px;
+  }
+  .call {
+    width: 95%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .call h2 {
+    font-size: 30px;
+  }
+  .form-register {
+    width: 95%;
+    padding: 20px;
+  }
+  .container__main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  footer .main {
+    padding: 1rem;
+  }
+  .subtitulosfooter1 {
+    display: none;
+  }
+}
